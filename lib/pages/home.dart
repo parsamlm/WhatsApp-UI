@@ -14,9 +14,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'WhatsApp',
-      home: DefaultTabController(
+    return Scaffold(
+      body: DefaultTabController(
         initialIndex: 1,
         length: 4,
         child: Scaffold(
@@ -24,10 +23,8 @@ class _HomeState extends State<Home> {
             title: const Text("WhatsApp"),
             automaticallyImplyLeading: false,
             backgroundColor: const Color(0XFF1f2C34),
-            titleTextStyle: const TextStyle(
-                color: Color(0XFF8693A2),
-                fontSize: 24.0
-            ),
+            titleTextStyle:
+                const TextStyle(color: Color(0XFF8693A2), fontSize: 24.0),
             actions: [
               IconButton(
                 icon: const Icon(Icons.search_rounded),
@@ -38,109 +35,94 @@ class _HomeState extends State<Home> {
                 },
               ),
               PopupMenuButton(
-                  enableFeedback: false,
-                  tooltip: "More options",
-                  icon: const Icon(Icons.more_vert_rounded),
-                  color: const Color(0XFF1f2C34),
-                  enabled: true,
-                  itemBuilder: (BuildContext context) => <PopupMenuEntry>[
-                    PopupMenuItem(
-                      onTap: (){
+                enableFeedback: false,
+                tooltip: "More options",
+                icon: const Icon(Icons.more_vert_rounded),
+                color: const Color(0XFF1f2C34),
+                enabled: true,
+                itemBuilder: (BuildContext context) => <PopupMenuEntry>[
+                  PopupMenuItem(
+                    padding: EdgeInsets.zero,
+                    child: ListTile(
+                      onTap: () {
                         //todo 'New group' button function
                       },
-                      padding: EdgeInsets.zero,
-                      child: const ListTile(
-                        title: Text(
-                          "New group",
-                          style: TextStyle(
-                            color: Colors.white
-                          ),
-                        ),
+                      title: const Text(
+                        "New group",
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
-                    PopupMenuItem(
-                      onTap: (){
+                  ),
+                  PopupMenuItem(
+                    padding: EdgeInsets.zero,
+                    child:  ListTile(
+                      onTap: () {
                         //todo 'New broadcast' button function
                       },
-                      padding: EdgeInsets.zero,
-                      child: const ListTile(
-                        title: Text(
-                          "New broadcast",
-                          style: TextStyle(
-                            color: Colors.white
-                          ),
-                        ),
+                      title: const Text(
+                        "New broadcast",
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
-                    PopupMenuItem(
-                      onTap: (){
+                  ),
+                  PopupMenuItem(
+                    padding: EdgeInsets.zero,
+                    child: ListTile(
+                      onTap: () {
                         //todo 'Linked devices' button function
                       },
-                      padding: EdgeInsets.zero,
-                      child: const ListTile(
-                        title: Text(
+                      title: const Text(
                         "Linked devices",
-                        style: TextStyle(
-                          color: Colors.white
-                        ),),
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
-                     PopupMenuItem(
-                      onTap: (){
+                  ),
+                  PopupMenuItem(
+                    padding: EdgeInsets.zero,
+                    child: ListTile(
+                      onTap: () {
                         //todo 'Starred messages' button function
                       },
-                      padding: EdgeInsets.zero,
-                      child: const ListTile(
-                        title: Text(
-                          "Starred messages",
-                          style: TextStyle(
-                            color: Colors.white
-                          ),
-                        ),
+                      title: const Text(
+                        "Starred messages",
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
-                    PopupMenuItem(
-                      onTap: (){
-                        //todo 'Settings' button function
+                  ),
+                  PopupMenuItem(
+                    enabled: true,
+                    padding: EdgeInsets.zero,
+                    child: ListTile(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/settings");
                       },
-                      padding: EdgeInsets.zero,
-                      child: const ListTile(
-                        title: Text(
+                      title: const Text(
                         "Settings",
-                        style: TextStyle(
-                          color: Colors.white
-                        ),
-                        ),
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
+                  ),
                 ],
               ),
             ],
             bottom: const TabBar(
               enableFeedback: false,
               indicatorWeight: 4,
-              labelStyle: TextStyle(
-                fontSize: 12.0,
-                fontWeight: FontWeight.bold
-              ),
+              labelStyle:
+                  TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold),
               indicatorColor: Color(0XFF199E80),
               labelColor: Color(0XFF199E80),
               unselectedLabelColor: Color(0XFF8693A2),
               tabs: <Widget>[
-                  Tab(icon: Icon(Icons.photo_camera_rounded)),
-                  Tab(text: "CHATS"),
-                  Tab(text: "STATUS"),
-                  Tab(text: "CALLS"),
+                Tab(icon: Icon(Icons.photo_camera_rounded)),
+                Tab(text: "CHATS"),
+                Tab(text: "STATUS"),
+                Tab(text: "CALLS"),
               ],
             ),
           ),
           body: const TabBarView(
-            children: [
-              Camera(),
-              Chats(),
-              Status(),
-              Calls()
-            ],
+            children: [Camera(), Chats(), Status(), Calls()],
           ),
         ),
       ),

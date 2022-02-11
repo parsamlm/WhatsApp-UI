@@ -13,7 +13,7 @@ class _StatusState extends State<Status> {
   Widget build(BuildContext context) {
     return Container(
       color: const Color(0XFF121B22),
-      child:  Padding(
+      child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Expanded(
           child: Row(
@@ -47,30 +47,28 @@ class _StatusState extends State<Status> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 5.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const <Widget>[
-                    Text(
-                      "My status",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14.0,
-                          fontWeight: FontWeight.bold
+                  padding: const EdgeInsets.only(top: 5.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const <Widget>[
+                      Text(
+                        "My status",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.bold),
                       ),
-                    ),
-                    SizedBox(height: 5.0),
-                    Text(
-                      "Tap to add status update",
-                      style: TextStyle(
+                      SizedBox(height: 5.0),
+                      Text(
+                        "Tap to add status update",
+                        style: TextStyle(
                           color: Color(0XFF87929B),
                           fontSize: 13.0,
+                        ),
                       ),
-                    ),
-                  ],
-                )
-              ),
+                    ],
+                  )),
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -79,22 +77,20 @@ class _StatusState extends State<Status> {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0.0, 0.0, 5.0, 0.0),
                       child: FloatingActionButton.small(
-                        onPressed: (){
+                        onPressed: () {
                           //todo 'status' floatingActionButton function
                         },
                         backgroundColor: const Color(0XFF233239),
                         child: const Icon(Icons.create_rounded),
-
                       ),
                     ),
                     const SizedBox(height: 10.0),
                     FloatingActionButton(
-                        onPressed: (){
+                        onPressed: () {
                           //todo 'camera' floatingActionButton function
                         },
                         backgroundColor: const Color(0XFF02a786),
-                        child: const Icon(Icons.photo_camera_rounded)
-                    ),
+                        child: const Icon(Icons.photo_camera_rounded)),
                   ],
                 ),
               )

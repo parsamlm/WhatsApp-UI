@@ -5,11 +5,11 @@ import 'package:whatsapp/pages/loading.dart';
 import 'package:whatsapp/pages/settings.dart';
 
 void main() => runApp(MaterialApp(
-  initialRoute: "/",
-  routes: {
-    "/": (context) => const Loading(),
-    "/home": (context) => const Home(),
-    "/contact": (context) => const Contact(),
-    "/settings": (context) => const Settings()
-  },
-));
+      initialRoute: "/",
+      routes: {
+        "/": (context) => const Loading(),
+        "/home": (context) => const Home(),
+        "/contact": (context) => const Contact(),
+        "/settings": (context) => Settings()
+      },
+    ));

@@ -24,40 +24,34 @@ class _CallsState extends State<Calls> {
                 padding: const EdgeInsets.all(24.0),
                 child: Center(
                   child: RichText(
-                      text: const TextSpan(
-                          children: [
-                            TextSpan(
-                                text: "To start calling contacts who have WhatsApp, tap ",
-                                style: TextStyle(
-                                  color: Color(0XFF8693A2),
-                                )
-                            ),
-                            WidgetSpan(
-                                child: Icon(
-                                  Icons.add_ic_call_rounded,
-                                  color: Color(0XFF8693A2),
-                                  size: 18.0,
-                                )
-                            ),
-                            TextSpan(
-                                text: " at the bottom of your screen.",
-                                style: TextStyle(
-                                  color: Color(0XFF8693A2),
-                                )
-                            )
-                          ]
-                      )
-                  ),
+                      text: const TextSpan(children: [
+                    TextSpan(
+                        text:
+                            "To start calling contacts who have WhatsApp, tap ",
+                        style: TextStyle(
+                          color: Color(0XFF8693A2),
+                        )),
+                    WidgetSpan(
+                        child: Icon(
+                      Icons.add_ic_call_rounded,
+                      color: Color(0XFF8693A2),
+                      size: 18.0,
+                    )),
+                    TextSpan(
+                        text: " at the bottom of your screen.",
+                        style: TextStyle(
+                          color: Color(0XFF8693A2),
+                        ))
+                  ])),
                 ),
               ),
             ),
             FloatingActionButton(
-                onPressed: (){
+                onPressed: () {
                   //todo 'calls' floatingActionButton function
                 },
                 backgroundColor: const Color(0XFF02a786),
-                child: const Icon(Icons.add_ic_call_rounded)
-            ),
+                child: const Icon(Icons.add_ic_call_rounded)),
           ],
         ),
       ),

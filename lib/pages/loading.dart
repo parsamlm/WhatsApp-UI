@@ -8,51 +8,41 @@ class Loading extends StatefulWidget {
 }
 
 class _LoadingState extends State<Loading> {
-
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 700), (){
+    Future.delayed(const Duration(milliseconds: 700), () {
       Navigator.pushReplacementNamed(context, "/home");
     });
   }
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: const Color(0XFF121B22),
       body: Column(
-        children: [
+        children: const <Widget>[
           Expanded(
               child: Center(
-                  child: Image.asset(
-                    "assets/logo.png",
-                    width: 128.0,
-                    height: 128.0,
-                  )
-              )
-          ),
-
-          const SizedBox(height: 130.0),
-
-          const Text(
+                  child: Icon(
+            Icons.whatsapp_rounded,
+            size: 36.0,
+          ))),
+          SizedBox(height: 130.0),
+          Text(
             "from",
-            style: TextStyle(
-                color: Color(0XFF63686c),
-                fontSize: 18.0
-            ),
+            style: TextStyle(color: Color(0XFF63686c), fontSize: 18.0),
           ),
-          const SizedBox(height: 5.0),
-          const Text(
+          SizedBox(height: 5.0),
+          Text(
             "FACEBOOK",
             style: TextStyle(
                 color: Color(0XFFcad2d4),
                 letterSpacing: 3.0,
                 fontSize: 23.0,
-              fontWeight: FontWeight.w500
-            ),
+                fontWeight: FontWeight.w500),
           ),
-          const SizedBox(height: 35.0),
-
+          SizedBox(height: 35.0),
         ],
       ),
     );

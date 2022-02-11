@@ -22,20 +22,16 @@ class _ChatsState extends State<Chats> {
               child: Center(
                 child: Text(
                   "None of your contacts are on WhatsApp",
-                  style: TextStyle(
-                      color: Color(0XFF8693A2),
-                      fontSize: 17
-                  ),
+                  style: TextStyle(color: Color(0XFF8693A2), fontSize: 17),
                 ),
               ),
             ),
             FloatingActionButton(
-                onPressed: (){
+                onPressed: () {
                   //todo 'chats' floatingActionButton function
                 },
                 backgroundColor: const Color(0XFF02a786),
-                child: const Icon(Icons.chat_rounded)
-            ),
+                child: const Icon(Icons.chat_rounded)),
           ],
         ),
       ),
