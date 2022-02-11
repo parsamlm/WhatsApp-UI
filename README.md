@@ -1,16 +1,10 @@
-# whatsapp
+# WhatsApp
 
-A new Flutter project.
+WhatsApp UI Project
 
-## Getting Started
+# Description
+This project was made to see how fast is flutter and check how it's powerful.
 
-This project is a starting point for a Flutter application.
+# Note - Important
+Seriously, do not use this project for any kind of scamming, reverse engineering or ... .
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

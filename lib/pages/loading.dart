@@ -13,7 +13,7 @@ class _LoadingState extends State<Loading> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(milliseconds: 700), (){
-      Navigator.pushReplacementNamed(context, "/chats");
+      Navigator.pushReplacementNamed(context, "/home");
     });
   }
   @override
@@ -26,8 +26,8 @@ class _LoadingState extends State<Loading> {
               child: Center(
                   child: Image.asset(
                     "assets/logo.png",
-                    width: 76.0,
-                    height: 76.0,
+                    width: 128.0,
+                    height: 128.0,
                   )
               )
           ),
