@@ -30,7 +30,9 @@ class _ChatsState extends State<Chats> {
               ),
             ),
             FloatingActionButton(
-                onPressed: (){},
+                onPressed: (){
+                  //todo 'chats' floatingActionButton function
+                },
                 backgroundColor: const Color(0XFF02a786),
                 child: const Icon(Icons.chat_rounded)
             ),

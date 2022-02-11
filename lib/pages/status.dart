@@ -79,7 +79,9 @@ class _StatusState extends State<Status> {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0.0, 0.0, 5.0, 0.0),
                       child: FloatingActionButton.small(
-                        onPressed: (){},
+                        onPressed: (){
+                          //todo 'status' floatingActionButton function
+                        },
                         backgroundColor: const Color(0XFF233239),
                         child: const Icon(Icons.create_rounded),
 
@@ -87,7 +89,9 @@ class _StatusState extends State<Status> {
                     ),
                     const SizedBox(height: 10.0),
                     FloatingActionButton(
-                        onPressed: (){},
+                        onPressed: (){
+                          //todo 'camera' floatingActionButton function
+                        },
                         backgroundColor: const Color(0XFF02a786),
                         child: const Icon(Icons.photo_camera_rounded)
                     ),

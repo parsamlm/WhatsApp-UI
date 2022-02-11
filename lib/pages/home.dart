@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
                 color: const Color(0XFF8693A2),
                 splashRadius: 20.0,
                 onPressed: () {
-                  //todo search button function
+                  //todo 'search' button function
                 },
               ),
               PopupMenuButton(
@@ -44,9 +44,12 @@ class _HomeState extends State<Home> {
                   color: const Color(0XFF1f2C34),
                   enabled: true,
                   itemBuilder: (BuildContext context) => <PopupMenuEntry>[
-                    const PopupMenuItem(
+                    PopupMenuItem(
+                      onTap: (){
+                        //todo 'New group' button function
+                      },
                       padding: EdgeInsets.zero,
-                      child: ListTile(
+                      child: const ListTile(
                         title: Text(
                           "New group",
                           style: TextStyle(
@@ -55,9 +58,12 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-                    const PopupMenuItem(
+                    PopupMenuItem(
+                      onTap: (){
+                        //todo 'New broadcast' button function
+                      },
                       padding: EdgeInsets.zero,
-                      child: ListTile(
+                      child: const ListTile(
                         title: Text(
                           "New broadcast",
                           style: TextStyle(
@@ -66,9 +72,12 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-                    const PopupMenuItem(
+                    PopupMenuItem(
+                      onTap: (){
+                        //todo 'Linked devices' button function
+                      },
                       padding: EdgeInsets.zero,
-                      child: ListTile(
+                      child: const ListTile(
                         title: Text(
                         "Linked devices",
                         style: TextStyle(
@@ -76,9 +85,12 @@ class _HomeState extends State<Home> {
                         ),),
                       ),
                     ),
-                    const PopupMenuItem(
+                     PopupMenuItem(
+                      onTap: (){
+                        //todo 'Starred messages' button function
+                      },
                       padding: EdgeInsets.zero,
-                      child: ListTile(
+                      child: const ListTile(
                         title: Text(
                           "Starred messages",
                           style: TextStyle(
@@ -87,14 +99,18 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-                    const PopupMenuItem(
+                    PopupMenuItem(
+                      onTap: (){
+                        //todo 'Settings' button function
+                      },
                       padding: EdgeInsets.zero,
-                      child: ListTile(
+                      child: const ListTile(
                         title: Text(
                         "Settings",
                         style: TextStyle(
                           color: Colors.white
-                        ),),
+                        ),
+                        ),
                       ),
                     ),
                 ],

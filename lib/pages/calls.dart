@@ -52,7 +52,9 @@ class _CallsState extends State<Calls> {
               ),
             ),
             FloatingActionButton(
-                onPressed: (){},
+                onPressed: (){
+                  //todo 'calls' floatingActionButton function
+                },
                 backgroundColor: const Color(0XFF02a786),
                 child: const Icon(Icons.add_ic_call_rounded)
             ),
