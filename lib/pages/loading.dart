@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Loading extends StatefulWidget {
   const Loading({Key? key}) : super(key: key);
@@ -11,9 +12,9 @@ class _LoadingState extends State<Loading> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 700), () {
-      Navigator.pushReplacementNamed(context, "/home");
-    });
+    //Future.delayed(const Duration(milliseconds: 700), () {
+    //  Navigator.pushReplacementNamed(context, "/home");
+    //});
   }
 
   @override
@@ -21,20 +22,23 @@ class _LoadingState extends State<Loading> {
     return Scaffold(
       backgroundColor: const Color(0XFF121B22),
       body: Column(
-        children: const <Widget>[
+        children: <Widget>[
           Expanded(
               child: Center(
-                  child: Icon(
-            Icons.whatsapp_rounded,
-            size: 36.0,
-          ))),
-          SizedBox(height: 130.0),
-          Text(
+                  child: SvgPicture.asset(
+                      "assets/logo.svg",
+                    width: 90.0,
+                    height: 90.0,
+                  )
+              )
+          ),
+          const SizedBox(height: 130.0),
+          const Text(
             "from",
             style: TextStyle(color: Color(0XFF63686c), fontSize: 18.0),
           ),
-          SizedBox(height: 5.0),
-          Text(
+          const SizedBox(height: 5.0),
+          const Text(
             "FACEBOOK",
             style: TextStyle(
                 color: Color(0XFFcad2d4),
@@ -42,7 +46,7 @@ class _LoadingState extends State<Loading> {
                 fontSize: 23.0,
                 fontWeight: FontWeight.w500),
           ),
-          SizedBox(height: 35.0),
+          const SizedBox(height: 35.0),
         ],
       ),
     );

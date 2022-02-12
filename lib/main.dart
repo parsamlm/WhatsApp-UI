@@ -10,6 +10,6 @@ void main() => runApp(MaterialApp(
         "/": (context) => const Loading(),
         "/home": (context) => const Home(),
         "/contact": (context) => const Contact(),
-        "/settings": (context) => Settings()
+        "/settings": (context) => const Settings()
       },
     ));
