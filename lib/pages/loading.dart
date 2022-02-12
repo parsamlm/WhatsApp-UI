@@ -12,9 +12,9 @@ class _LoadingState extends State<Loading> {
   @override
   void initState() {
     super.initState();
-    //Future.delayed(const Duration(milliseconds: 700), () {
-    //  Navigator.pushReplacementNamed(context, "/home");
-    //});
+    Future.delayed(const Duration(milliseconds: 700), () {
+      Navigator.pushReplacementNamed(context, "/home");
+    });
   }
 
   @override
