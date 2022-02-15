@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
                   ),
                   PopupMenuItem(
                     padding: EdgeInsets.zero,
-                    child:  ListTile(
+                    child: ListTile(
                       onTap: () {
                         //todo 'New broadcast' button function
                       },
