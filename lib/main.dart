@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/pages/home.dart';
 import 'package:whatsapp/pages/contact.dart';
+import 'package:whatsapp/pages/linked_devices.dart';
 import 'package:whatsapp/pages/loading.dart';
 import 'package:whatsapp/pages/settings.dart';
 import 'package:whatsapp/pages/starred_messages.dart';
@@ -12,6 +13,7 @@ void main() => runApp(MaterialApp(
         "/home": (context) => const Home(),
         "/contact": (context) => const Contact(),
         "/settings": (context) => const Settings(),
-        "/starred_messages": (context) => const StarredMessages()
+        "/starred_messages": (context) => const StarredMessages(),
+        "/linked_devices": (context) => const LinkedDevices()
       },
     ));

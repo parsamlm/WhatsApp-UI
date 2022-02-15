@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.zero,
                     child: ListTile(
                       onTap: () {
-                        //todo 'Linked devices' button function
+                        Navigator.pushNamed(context, "/linked_devices");
                       },
                       title: const Text(
                         "Linked devices",
