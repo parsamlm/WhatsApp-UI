@@ -26,12 +26,10 @@ class _LoadingState extends State<Loading> {
           Expanded(
               child: Center(
                   child: SvgPicture.asset(
-                      "assets/logo.svg",
-                    width: 90.0,
-                    height: 90.0,
-                  )
-              )
-          ),
+            "assets/logo.svg",
+            width: 90.0,
+            height: 90.0,
+          ))),
           const SizedBox(height: 130.0),
           const Text(
             "from",

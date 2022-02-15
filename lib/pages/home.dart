@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.zero,
                     child: ListTile(
                       onTap: () {
-                        //todo 'Starred messages' button function
+                        Navigator.pushNamed(context, "/starred_messages");
                       },
                       title: const Text(
                         "Starred messages",
