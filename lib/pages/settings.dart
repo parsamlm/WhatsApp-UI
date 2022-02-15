@@ -42,7 +42,7 @@ class _SettingsState extends State<Settings> {
                             "Parsa",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 17.0,
+                              fontSize: 18.0,
                             ),
                           ),
                           SizedBox(height: 5.0),
@@ -50,7 +50,7 @@ class _SettingsState extends State<Settings> {
                             "Hey there! I am using WhatsApp.",
                             style: TextStyle(
                               color: Color(0XFF7E8F92),
-                              fontSize: 13.0,
+                              fontSize: 14.0,
                             ),
                           ),
                         ],
@@ -95,7 +95,6 @@ class _SettingsState extends State<Settings> {
                             style: TextStyle(
                               color: Color(0XFFD4DBE1),
                               fontSize: 17.0,
-                              fontWeight: FontWeight.w600
                             ),
                           ),
                           SizedBox(height: 5.0),
@@ -136,7 +135,6 @@ class _SettingsState extends State<Settings> {
                             style: TextStyle(
                                 color: Color(0XFFD4DBE1),
                                 fontSize: 17.0,
-                                fontWeight: FontWeight.w600
                             ),
                           ),
                           SizedBox(height: 5.0),
@@ -177,7 +175,6 @@ class _SettingsState extends State<Settings> {
                             style: TextStyle(
                                 color: Color(0XFFD4DBE1),
                                 fontSize: 17.0,
-                                fontWeight: FontWeight.w600
                             ),
                           ),
                           SizedBox(height: 5.0),
@@ -218,7 +215,6 @@ class _SettingsState extends State<Settings> {
                             style: TextStyle(
                                 color: Color(0XFFD4DBE1),
                                 fontSize: 17.0,
-                                fontWeight: FontWeight.w600
                             ),
                           ),
                           SizedBox(height: 5.0),
@@ -259,7 +255,6 @@ class _SettingsState extends State<Settings> {
                             style: TextStyle(
                                 color: Color(0XFFD4DBE1),
                                 fontSize: 17.0,
-                                fontWeight: FontWeight.w600
                             ),
                           ),
                           SizedBox(height: 5.0),
@@ -300,7 +295,6 @@ class _SettingsState extends State<Settings> {
                             style: TextStyle(
                                 color: Color(0XFFD4DBE1),
                                 fontSize: 17.0,
-                                fontWeight: FontWeight.w600
                             ),
                           ),
                         ],
@@ -311,12 +305,12 @@ class _SettingsState extends State<Settings> {
               ),
               Center(
                 child: Container(
-                  margin: const EdgeInsets.only(top: 40.0),
+                  margin: const EdgeInsets.only(top: 60.0),
                   child: Column(
                     children: const <Widget>[
                       Text(
                         "from",
-                        style: TextStyle(color: Color(0XFF63686c), fontSize: 14.0),
+                        style: TextStyle(color: Color(0XFF889399), fontSize: 17.0),
                       ),
                       SizedBox(height: 5.0),
                       Text(
@@ -324,9 +318,9 @@ class _SettingsState extends State<Settings> {
                         style: TextStyle(
                             color: Color(0XFFcad2d4),
                             letterSpacing: 2.0,
-                            fontSize: 15.0,
-                            fontWeight: FontWeight.w500),
+                            fontSize: 17.0,
                       ),
+                      )
                     ],
                   ),
                 ),
